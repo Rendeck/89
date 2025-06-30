@@ -1,0 +1,253 @@
+/* ==================== RESET Y BASE ==================== */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+  flex-direction: column;
+}
+
+body > .contenido {
+  flex: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==================== VIDEO HERO ==================== */
+
+#videoFondo {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* ==================== TERAPIA CARDS ==================== */
+.custom-card {
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card:hover {
+  background-color: #4b2e83;
+  color: white;
+  transform: translateY(-8px);
+}
+
+.custom-card:hover .card-title,
+.custom-card:hover .card-text {
+  color: white;
+}
+
+.custom-card:hover img {
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.terapia-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.terapia-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.terapia-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.terapia-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px 5px #4b2e83, 0 4px 20px #4b2e83, 0 0 30px 10px #4b2e83;
+}
+
+.terapia-card img {
+  max-width: 120px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.terapia-card h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.terapia-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.terapia-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+  text-align: left;
+  margin: 0;
+}
+
+.terapia-card ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.terapia-card h3:last-child {
+  text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  .terapia-card h3 {
+    font-size: 1.2rem;
+  }
+  .terapia-card p,
+  .terapia-card ul li {
+    font-size: 0.9rem;
+  }
+}
+
+/* ==================== BLOG ==================== */
+.section-header h2 {
+  color: #132340;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.portada-nota-thumb {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .portada-nota-thumb {
+  opacity: 0.9;
+}
+
+.card-title {
+  color: #132340;
+  font-size: 1.1rem;
+  font-weight: 600;
+  min-height: 50px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.card-body small {
+  color: #a4a4a2;
+}
+
+#blog .btn {
+  color: white;
+  background-color: #3e2668;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+#blog .btn:hover {
+  background-color: #522c84;
+}
+
+/* ==================== UBICACIÓN ==================== */
+.ubicacion h2 {
+  font-size: 2.2rem;
+  color: #522c84;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ubicacion .info-box h3 {
+  font-size: 1.2rem;
+  color: #522c84;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.ubicacion .info-box p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.ubicacion .info-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ubicacion .info-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.ubicacion .btn:hover {
+  background-color: #522c84;
+}
+
+/* ==================== FOOTER ==================== */
+#footer {
+  background: #522c84;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+#footer .footer-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#footer .footer-menu a:hover {
+  color: #00fc93;
+}
+
+#footer .social-links a {
+  font-size: 1.6rem;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+#footer .social-links a:hover {
+  color: #2CB67D;
+}
+
+
