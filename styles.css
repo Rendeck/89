@@ -366,3 +366,23 @@ body > .contenido {
     align-items: center;
   }
 }
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 30%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
