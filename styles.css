@@ -6,6 +6,15 @@ html, body {
   background-color: #f6f6f6;
   color: #333;
   flex-direction: column;
+    height: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    
+    
+    .contenido {
+      flex: 1;
+    }
 }
 
 body > .contenido {
@@ -385,4 +394,74 @@ body > .contenido {
 .whatsapp-float:hover {
   transform: scale(1.1);
   text-decoration: none;
+}
+
+
+.text-purple {
+  color: #6f42c1;
+}
+
+.especialidades-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.especialidades-list li {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.especialidades-list li:hover {
+  transform: translateX(5px);
+  color: #6f42c1;
+}
+
+.especialidades-list li i {
+  transition: transform 0.3s ease;
+}
+
+.especialidades-list li:hover i {
+  transform: scale(1.2);
+}
+
+
+.text-purple {
+  color: #f7f6fa;
+}
+
+.tratamientos-list li {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.tratamientos-list li:hover {
+  background-color: #f3ecff;
+  transform: translateX(5px);
+  box-shadow: 0 4px 10px rgba(111, 66, 193, 0.1);
+}
+
+.tratamientos-list li i {
+  transition: transform 0.3s ease;
+}
+
+.tratamientos-list li:hover i {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.tratamientos-box {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tratamientos-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px #4b2e83;
 }
