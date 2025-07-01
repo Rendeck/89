@@ -33,6 +33,7 @@
    <link href="https://eligehoyaepsicologos.com/assets/eligehoy/aos/aos.css" rel="stylesheet">
    <link href="https://eligehoyaepsicologos.com/assets/eligehoy/glightbox/css/glightbox.min.css" rel="stylesheet">
    <link href="https://eligehoyaepsicologos.com/assets/eligehoy/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    <!-- Template Main CSS File -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link href="https://eligehoyaepsicologos.com/assets/css/main.css?v=0.1.1" rel="stylesheet">
@@ -111,14 +112,20 @@
 
 </head>
 <main>
-
+  <body>
 
 <!-- HERO VIDEO -->
-<body>
-    
-    <video autoplay muted loop id="videoFondo">
-        <source src="video/CASCADA.mp4" type="video/mp4">
-      </video>
+<div class="hero-container position-relative">
+  <video autoplay muted loop id="videoFondo" class="w-100">
+    <source src="video/CASCADA.mp4" type="video/mp4">
+  </video>
+
+  <!-- TEXTO ENCIMA -->
+  <div class="texto-encima position-absolute top-50 start-50 translate-middle text-center">
+    <h1 class="display-4 fw-bold text-purple animate__animated animate__fadeInDown">¡Bienvenid@ a Elige Hoy!</h1>
+    <a href="#servicios" class="btn btn-success mt-3 animate__animated animate__fadeInUp animate__delay-1s">Agenda tu cita</a>
+  </div>
+</div>
 
                   </div>
                   <section id="otros-servicios" class="services sections-bg pt-5">
@@ -287,6 +294,22 @@
   </div> <!-- fin de d-flex -->
       </section>
        
+      <section class="personal-section">
+        <h2>Nuestro Equipo de Psicólogos</h2>
+        <div class="personal-container">
+          <div class="personal-card">
+            <img src="./img/Captura.PNG" alt="Psicólogo 1">
+            <h3>Lic. Ana Torres</h3>
+            <p>Especialista en terapia cognitivo-conductual con más de 10 años de experiencia en ansiedad y depresión.</p>
+          </div>
+          <div class="personal-card">
+            <img src="./img/Captura.PNG" alt="Psicólogo 2">
+            <h3>Dr. Marco Díaz</h3>
+            <p>Psicólogo clínico enfocado en intervención en crisis y orientación familiar.</p>
+          </div>
+          <!-- Agrega más tarjetas si lo necesitas -->
+        </div>
+      </section>
       <!-- ======= Testimonials Section ======= -->
   <section id="testimonials" class="testimonials">
     <div class="container" data-aos="fade-up">
