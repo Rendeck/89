@@ -433,6 +433,12 @@ body > .contenido {
   color: #f7f6fa;
 }
 
+/* Color base del ícono (morado) */
+.text-purple {
+  color: #6f42c1;
+}
+
+/* Estilo base de cada item */
 .tratamientos-list li {
   font-size: 1.05rem;
   margin-bottom: 12px;
@@ -441,27 +447,29 @@ body > .contenido {
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
+  color: #333;
 }
 
+/* Animación al pasar el mouse */
 .tratamientos-list li:hover {
-  background-color: #f3ecff;
+  background-color: #e6f4ea;
+  color: #198754; /* Verde Bootstrap */
   transform: translateX(5px);
-  box-shadow: 0 4px 10px rgba(111, 66, 193, 0.1);
+  box-shadow: 0 4px 10px rgba(25, 135, 84, 0.1);
 }
 
-.tratamientos-list li i {
-  transition: transform 0.3s ease;
-}
-
+/* Cambia color del ícono al hacer hover */
 .tratamientos-list li:hover i {
-  transform: scale(1.2) rotate(5deg);
+  color: #198754 !important;
+  transform: scale(1.2);
 }
 
+/* Tarjetas suaves */
 .tratamientos-box {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tratamientos-box:hover {
   transform: scale(1.02);
-  box-shadow: 0 10px 25px #4b2e83;
+  box-shadow: 0 10px 25px rgba(25, 135, 84, 0.15);
 }
