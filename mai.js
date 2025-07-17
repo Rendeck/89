@@ -9,3 +9,12 @@ AOS.init();
         1024: { slidesPerView: 3 }
       }
     })
+
+    function toggleInfo(infoId) {
+      const infoSection = document.getElementById(infoId);
+      if (infoSection.style.display === "none") {
+          infoSection.style.display = "block";
+      } else {
+          infoSection.style.display = "none";
+      }
+  }

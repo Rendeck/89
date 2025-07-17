@@ -3,19 +3,23 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f6f6f6;
-  color: #333;
+  background-color: #d9d8df; /* Cambiado a color morado */
+  color: #ffffff; /* Cambiado a blanco para mejor contraste */
   flex-direction: column;
-    height: 100%;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    
-    
-    .contenido {
-      flex: 1;
-    }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+.body > .contenido {
+  flex: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 
 body > .contenido {
   flex: 1;
@@ -341,13 +345,37 @@ body > .contenido {
 
 
 /* ==================== PERSONAL ==================== */
-.bg-purple {
-  background-color: #6a0dad !important;
-  color: white;
+/* Estilos generales */
+.personal-card {
+  border: 1px solid #ccc; /* Borde original */
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px; /* Ancho fijo para las tarjetas */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
-.modal-content {
-  box-shadow: 0 15px 40px rgba(106, 13, 173, 0.2);
+
+.personal-card:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  border: 2px solid #522c84; /* Borde morado al hacer hover */
+  box-shadow: 0 0 15px #522c84; /* Sombra morada */
 }
+
+.personal-card img {
+  transition: transform 0.3s ease;
+}
+
+.personal-card:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+}
+body {
+  font-family: Arial, sans-serif; /* Fuente general */
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección de terapeutas */
 .personal-section {
   padding: 60px 20px;
   background-color: #fff;
@@ -361,6 +389,7 @@ body > .contenido {
   font-weight: bold;
 }
 
+/* Contenedor de tarjetas */
 .personal-container {
   display: flex;
   flex-wrap: wrap;
@@ -368,26 +397,27 @@ body > .contenido {
   justify-content: center;
 }
 
+/* Tarjetas de terapeutas */
 .personal-card {
-  background: #fdfdfd;
+  background: #d3d1d1c7;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 30px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   width: 280px;
   transition: transform 0.3s ease;
 }
 
 .personal-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px); /* Efecto de elevación al pasar el mouse */
 }
 
 .personal-card img {
-  width: 170px;
-  height: 150px;
+  width: 190px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 4px solid #522c84;
+  border: 4px solid #522c84; /* Borde de la imagen */
 }
 
 .personal-card h3 {
@@ -402,12 +432,67 @@ body > .contenido {
   line-height: 1.4;
 }
 
+/* Botones */
+.button-container {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-info {
+  background-color: #218b45; /* Color verde */
+}
+
+.btn-info:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+.btn-success {
+  background-color: #28a745; /* Color verde */
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Verde más oscuro */
+}
+
+/* Información adicional */
+.info {
+  margin-top: 10px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Estilos adicionales */
+.bg-purple {
+  background-color: #6a0dad !important;
+  color: white;
+}
+
+.modal-content {
+  box-shadow: 0 15px 40px rgba(106, 13, 173, 0.2);
+}
+
+/* Responsividad */
 @media (max-width: 768px) {
   .personal-container {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .personal-card {
+      width: 90%; /* Tarjetas ocupan más espacio en pantallas pequeñas */
   }
 }
+
 
 /* Botón flotante de WhatsApp */
 .whatsapp-float {
